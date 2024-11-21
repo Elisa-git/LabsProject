@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "7dRb4kk6/2apQwvqC3/YCyzwTefv+9uBrdLbtSJOOKk=",
+  "Source": "Labs.API",
+  "BasePath": "_content/Labs.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
