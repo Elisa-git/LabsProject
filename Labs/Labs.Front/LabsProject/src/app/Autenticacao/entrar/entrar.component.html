@@ -1,0 +1,33 @@
+<ngx-spinner
+  id="spinner-cadastro" bdColor="rgba(0, 0, 0, 0.8)" size="medium"
+  color="#ffffff" type="ball-8bits" [fullScreen]="false"
+>
+</ngx-spinner>
+
+<div class="container">
+
+  <div class="col-3">
+    <h1>Bem-vindo de volta!</h1>
+    <p>Acesse sua conta agora mesmo.</p>
+    <p class="text-small">Esqueci minha senha</p>
+  </div>
+
+  <div class="col-9">
+    <h1>Acesse sua conta</h1>
+    <p>Preencha seus dados</p>
+
+    <form [formGroup]="loginForm">
+      <div>
+        <label for="email-input">Email</label>
+        <input type="email" formControlName="email" class="form-control" id="email-input" placeholder="Digite seu email" required>
+      </div>
+      <div>
+        <label for="senha-input">Senha</label>
+        <input type="password" formControlName="senha" class="form-control" id="senha-input" placeholder="Digite sua senha" required>
+      </div>
+    </form>
+
+    <button id="cadastrar-btn" (click)="entrar()">Entrar</button>
+  </div>
+
+</div>
