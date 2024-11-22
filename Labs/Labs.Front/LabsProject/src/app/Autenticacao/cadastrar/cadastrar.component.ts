@@ -25,6 +25,7 @@ export class CadastrarComponent {
   )
   {
     this.usuarioForm = this.formBuilder.group({
+      nome: [ '', Validators.required ],
       email: [ '', Validators.required ],
       senha: [ '', Validators.required ]
     });
@@ -33,6 +34,7 @@ export class CadastrarComponent {
   public cadastrarUsuario() {
     this.spinner.show();
     this.loginRequest = new LoginRequest({
+      nome: this.usuarioForm.get("nome")?.value,
       email: this.usuarioForm.get("email")?.value,
       password: this.usuarioForm.get("senha")?.value
     });

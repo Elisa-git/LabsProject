@@ -18,6 +18,10 @@
 
     <form [formGroup]="usuarioForm">
       <div>
+        <label for="nome-input">Nome</label>
+        <input type="nome" formControlName="nome" class="form-control" id="nome-input" placeholder="Digite seu nome" required>
+      </div>
+      <div>
         <label for="email-input">Email</label>
         <input type="email" formControlName="email" class="form-control" id="email-input" placeholder="Digite seu email" required>
       </div>

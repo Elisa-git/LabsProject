@@ -10,6 +10,7 @@ import { Observable } from 'rxjs';
 export class AutenticacaoService {
 
   private readonly url = 'https://localhost:7042/auth/';
+  private readonly apiAuthPersonalizada = 'https://localhost:7042/api/Auth/';
 
   constructor(private readonly httpClient: HttpClient) { }
 
@@ -18,6 +19,6 @@ export class AutenticacaoService {
   }
 
   public cadastrarUsuario(request: LoginRequest) {
-    return this.httpClient.post(this.url + "register", request)
+    return this.httpClient.post(this.apiAuthPersonalizada + "register", request)
   }
 }

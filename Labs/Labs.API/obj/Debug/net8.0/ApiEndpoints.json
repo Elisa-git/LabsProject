@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "Labs.API.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "Labs.API.Models.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Labs.API.Controllers.ProdutosController",
     "Method": "GetProdutos",
     "RelativePath": "api/Produtos",
