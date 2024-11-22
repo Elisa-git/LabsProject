@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Labs.API.Migrations
 {
     [DbContext(typeof(LabsDBContext))]
-    [Migration("20241120150146_identityTabela")]
-    partial class identityTabela
+    [Migration("20241121210054_inicial")]
+    partial class inicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

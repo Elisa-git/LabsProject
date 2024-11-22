@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lilis\\Music\\Labs\\Labs.API\\Labs.API.csproj": {}
+    "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Labs.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lilis\\Music\\Labs\\Labs.API\\Labs.API.csproj": {
+    "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Labs.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lilis\\Music\\Labs\\Labs.API\\Labs.API.csproj",
+        "projectUniqueName": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Labs.API.csproj",
         "projectName": "Labs.API",
-        "projectPath": "C:\\Users\\lilis\\Music\\Labs\\Labs.API\\Labs.API.csproj",
+        "projectPath": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Labs.API.csproj",
         "packagesPath": "C:\\Users\\lilis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lilis\\Music\\Labs\\Labs.API\\obj\\",
+        "outputPath": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

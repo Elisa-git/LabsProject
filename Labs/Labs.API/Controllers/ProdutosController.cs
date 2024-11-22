@@ -26,7 +26,7 @@ namespace Labs.API.Controllers
 
         // GET: api/Produtos/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Produto>> GetProduto(long id)
+        public async Task<ActionResult<Produto>> GetProduto(int id)
         {
             var produto = await _context.Produtos.FindAsync(id);
 
@@ -41,7 +41,7 @@ namespace Labs.API.Controllers
         // PUT: api/Produtos/5
         [HttpPut("{id}")]
         [Authorize]
-        public async Task<IActionResult> PutProduto(long id, Produto produto)
+        public async Task<IActionResult> PutProduto(int id, Produto produto)
         {
             if (id != produto.Id)
             {
@@ -83,7 +83,7 @@ namespace Labs.API.Controllers
         // DELETE: api/Produtos/5
         [HttpDelete("{id}")]
         [Authorize]
-        public async Task<IActionResult> DeleteProduto(long id)
+        public async Task<IActionResult> DeleteProduto(int id)
         {
             var produto = await _context.Produtos.FindAsync(id);
             if (produto == null)
