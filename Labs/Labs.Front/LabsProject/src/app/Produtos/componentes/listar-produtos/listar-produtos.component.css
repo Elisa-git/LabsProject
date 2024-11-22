@@ -1,0 +1,41 @@
+.container {
+  margin-top: 7rem;
+}
+
+.card {
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+  background-color: white;
+}
+.btn-upload {
+  background-color: rgba(110,162,223,1);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.btn-upload:hover {
+  background-color: rgba(219,151,181,1);
+}
+table {
+  margin: 20px 0;
+}
+
+.btn-action {
+  padding: 5px 10px;
+  background-color: rgba(219,151,181,1);
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-action:hover {
+  background-color: rgba(110,162,223,1);
+  transition: 0.7s;
+}
+
+#excluir-btn {
+  margin-left: 5px;
+}

@@ -1,8 +1,9 @@
 import { RouterModule, Routes } from '@angular/router';
 import { CadastrarComponent } from './Autenticacao/cadastrar/cadastrar.component';
 import { NgModule } from '@angular/core';
-import { ListarProdutosComponent } from './Produtos/listar-produtos/listar-produtos.component';
+import { ListarProdutosComponent } from './Produtos/componentes/listar-produtos/listar-produtos.component';
 import { EntrarComponent } from './Autenticacao/entrar/entrar.component';
+import { CadastrarProdutosComponent } from './Produtos/componentes/cadastrar-produtos/cadastrar-produtos.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
     path: 'listar-produtos',
     component: ListarProdutosComponent
   },
+  {
+    path: 'cadastrar-produtos',
+    component: CadastrarProdutosComponent
+  }
 ];
 
 @NgModule({

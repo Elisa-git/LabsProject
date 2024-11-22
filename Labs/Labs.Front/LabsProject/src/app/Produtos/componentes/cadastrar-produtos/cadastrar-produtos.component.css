@@ -1,0 +1,102 @@
+.container {
+  margin-top: 10rem;
+  width: 80%;
+  height: 60%;
+  display: flex;
+  overflow: hidden;
+  max-width: 900px;
+}
+
+.col-3 {
+  border-radius: 15px 0 0 15px;
+  background-color: rgba(219,151,181,1);
+  color: white;
+  padding: 40px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.col-3 h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.col-3 p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.text-small {
+  font-size: 0.85rem;
+  margin-top: 30px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.col-9 {
+  flex: 2;
+  background-color: white;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0 15px 15px 0;
+}
+
+.col-9 h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.col-9 p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #888;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center; /* Alinha os botões no centro horizontal */
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgba(110, 162, 223, 1);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(219, 151, 181, 1);
+  transition: 0.7s;
+}
+
+#disabled-btn {
+  background-color: gray;
+  cursor: default;
+}

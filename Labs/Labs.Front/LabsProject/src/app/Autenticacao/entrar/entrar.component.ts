@@ -5,6 +5,7 @@ import { AutenticacaoService } from '../autenticacao.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { finalize } from 'rxjs';
 import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-entrar',
@@ -22,7 +23,8 @@ export class EntrarComponent {
     private readonly formBuilder: FormBuilder,
     private readonly autenticacaoService: AutenticacaoService,
     private readonly toastr: ToastrService,
-    private readonly spinner: NgxSpinnerService
+    private readonly spinner: NgxSpinnerService,
+    private readonly route: Router
   )
   {
     this.loginForm = this.formBuilder.group({
@@ -42,8 +44,8 @@ export class EntrarComponent {
       .entrar(this.loginRequest)
       .pipe(finalize(() => { this.spinner.hide(); }))
       .subscribe(() => {
-        // Fazer o redirecionamento
         this.toastr.success('Sucesso!', 'Você logou!!');
+        this.route.navigate(['/listar-produtos']);
       }, erro => {
         this.toastr.error('Erro!', 'Credenciais incorretas');
       }
