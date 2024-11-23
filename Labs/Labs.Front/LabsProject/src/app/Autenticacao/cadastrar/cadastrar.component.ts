@@ -43,7 +43,6 @@ export class CadastrarComponent {
       .cadastrarUsuario(this.loginRequest)
       .pipe(finalize(() => { this.spinner.hide(); }))
       .subscribe(() => {
-        // Fazer o redirecionamento
         this.toastr.success('Sucesso!', 'Usuário criado!!');
       }, erro => {
         this.toastr.error('Erro!', 'Um problema aconteceu');

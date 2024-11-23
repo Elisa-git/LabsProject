@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { LoginRequest } from './models/login.request';
 import { AutenticacaoService } from '../autenticacao.service';
@@ -6,6 +6,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 import { finalize } from 'rxjs';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
+import { UserResponse } from './models/user.response';
 
 @Component({
   selector: 'app-entrar',
@@ -15,6 +16,7 @@ import { Router } from '@angular/router';
 
 export class EntrarComponent {
 
+  @Output() infoForNavbar = new EventEmitter<UserResponse>();
   public loginForm: FormGroup;
 
   public loginRequest = new LoginRequest({});
@@ -43,11 +45,14 @@ export class EntrarComponent {
     this.autenticacaoService
       .entrar(this.loginRequest)
       .pipe(finalize(() => { this.spinner.hide(); }))
-      .subscribe(() => {
+      .subscribe(response => {
+        this.infoForNavbar.emit(response);
         this.toastr.success('Sucesso!', 'Você logou!!');
         this.route.navigate(['/listar-produtos']);
       }, erro => {
-        this.toastr.error('Erro!', 'Credenciais incorretas');
+        console.log(erro);
+
+        this.toastr.error(erro.error.message, 'Erro!');
       }
     );
   }

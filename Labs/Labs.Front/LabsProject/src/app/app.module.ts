@@ -1,19 +1,18 @@
 import { AppComponent } from "./app.component";
 import { CadastrarComponent } from "./Autenticacao/cadastrar/cadastrar.component";
 import { ListarProdutosComponent } from "./Produtos/componentes/listar-produtos/listar-produtos.component";
-import { NavbarComponent } from "./Navbar/navbar.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { BrowserModule } from "@angular/platform-browser";
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
+import { HttpClientModule } from "@angular/common/http";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { EntrarComponent } from "./Autenticacao/entrar/entrar.component";
 import { ToastNoAnimationModule } from "ngx-toastr";
 import { CadastrarProdutosComponent } from "./Produtos/componentes/cadastrar-produtos/cadastrar-produtos.component";
-// import { CookieInterceptor } from "./Interceptor/cookie.interceptor";
+import { NavbarComponent } from "./Navbar/navbar.component";
 
 @NgModule({
   declarations: [
@@ -37,13 +36,6 @@ import { CadastrarProdutosComponent } from "./Produtos/componentes/cadastrar-pro
   ],
   bootstrap: [ AppComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
-  // providers: [
-  //   {
-  //     provide: HTTP_INTERCEPTORS,
-  //     useClass: CookieInterceptor,
-  //     multi: true
-  //   }
-  // ]
 
 })
 
