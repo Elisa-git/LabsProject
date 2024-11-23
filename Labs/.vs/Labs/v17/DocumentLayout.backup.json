@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\models\\pessoacomacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\models\\pessoacomacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\config\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\config\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\4 - infra\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\4 - infra\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\models\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\models\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\2 - application\\authapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\2 - application\\authapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\data\\labsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\data\\labsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\models\\perfildeacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\models\\perfildeacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\1 - controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\1 - controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Models\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "Labs.API\\Models\\RegisterDto.cs",
-              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Models\\RegisterDto.cs",
-              "RelativeToolTip": "Labs.API\\Models\\RegisterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Config\\EmailSender.cs",
+              "RelativeDocumentMoniker": "Labs.API\\Config\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Config\\EmailSender.cs",
+              "RelativeToolTip": "Labs.API\\Config\\EmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T02:10:04.498Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Labs.API\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Labs.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T02:02:09.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProdutosController.cs",
-              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Controllers\\ProdutosController.cs",
-              "RelativeDocumentMoniker": "Labs.API\\Controllers\\ProdutosController.cs",
-              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Controllers\\ProdutosController.cs",
-              "RelativeToolTip": "Labs.API\\Controllers\\ProdutosController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEkAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T15:17:26.632Z",
+              "WhenOpened": "2024-11-23T15:02:24.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Program.cs",
-              "RelativeDocumentMoniker": "Labs.API\\Program.cs",
-              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Program.cs",
-              "RelativeToolTip": "Labs.API\\Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\1 - Controller\\AuthController.cs",
+              "RelativeDocumentMoniker": "Labs.API\\1 - Controller\\AuthController.cs",
+              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\1 - Controller\\AuthController.cs",
+              "RelativeToolTip": "Labs.API\\1 - Controller\\AuthController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDkAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T15:05:53.581Z",
+              "WhenOpened": "2024-11-23T13:52:29.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "Labs.API\\Models\\Produto.cs",
-              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Models\\Produto.cs",
-              "RelativeToolTip": "Labs.API\\Models\\Produto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AuthApplication.cs",
+              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\2 - Application\\AuthApplication.cs",
+              "RelativeDocumentMoniker": "Labs.API\\2 - Application\\AuthApplication.cs",
+              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\2 - Application\\AuthApplication.cs",
+              "RelativeToolTip": "Labs.API\\2 - Application\\AuthApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T14:47:22.518Z",
+              "WhenOpened": "2024-11-22T21:28:00.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PerfilDeAcesso.cs",
-              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Models\\PerfilDeAcesso.cs",
-              "RelativeDocumentMoniker": "Labs.API\\Models\\PerfilDeAcesso.cs",
-              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Models\\PerfilDeAcesso.cs",
-              "RelativeToolTip": "Labs.API\\Models\\PerfilDeAcesso.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\4 - Infra\\AuthService.cs",
+              "RelativeDocumentMoniker": "Labs.API\\4 - Infra\\AuthService.cs",
+              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\4 - Infra\\AuthService.cs",
+              "RelativeToolTip": "Labs.API\\4 - Infra\\AuthService.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAADwv00AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T14:58:02.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PessoaComAcesso.cs",
-              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Models\\PessoaComAcesso.cs",
-              "RelativeDocumentMoniker": "Labs.API\\Models\\PessoaComAcesso.cs",
-              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Models\\PessoaComAcesso.cs",
-              "RelativeToolTip": "Labs.API\\Models\\PessoaComAcesso.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T14:57:49.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LabsDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Data\\LabsDBContext.cs",
-              "RelativeDocumentMoniker": "Labs.API\\Data\\LabsDBContext.cs",
-              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\Data\\LabsDBContext.cs",
-              "RelativeToolTip": "Labs.API\\Data\\LabsDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T14:56:00.207Z",
+              "WhenOpened": "2024-11-23T00:31:46.764Z",
               "EditorCaption": ""
             }
           ]

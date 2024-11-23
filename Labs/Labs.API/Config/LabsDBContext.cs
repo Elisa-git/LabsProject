@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Labs.API.Data
+namespace Labs.API.Config
 {
     public class LabsDBContext : IdentityDbContext<PessoaComAcesso, PerfilDeAcesso, int>
     {

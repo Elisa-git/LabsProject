@@ -491,3 +491,7 @@ C:\Users\lilis\Music\LabsProject\Labs\Labs.API\obj\Debug\net8.0\refint\Labs.API.
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\obj\Debug\net8.0\Labs.API.pdb
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\obj\Debug\net8.0\Labs.API.genruntimeconfig.cache
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\obj\Debug\net8.0\ref\Labs.API.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\SendGrid.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\StarkbankEcdsa.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\SendGrid.Extensions.DependencyInjection.dll

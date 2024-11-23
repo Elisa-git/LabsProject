@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Labs.API.Data;
+using Labs.API.Config;
 using Labs.API.Models;
 using Microsoft.AspNetCore.Authorization;
 

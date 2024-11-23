@@ -1,6 +1,6 @@
-﻿namespace Labs.API.Models
+﻿namespace Labs.API.Models.Request
 {
-    public class RegisterDto
+    public class CadastroRequest
     {
         public string Email { get; set; }
         public string Password { get; set; }
