@@ -72,7 +72,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Labs.API.Models.Produto, Labs.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Labs.API._3___Models.Response.ProdutoResponse, Labs.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -92,13 +92,13 @@
     "Parameters": [
       {
         "Name": "produto",
-        "Type": "Labs.API.Models.Produto",
+        "Type": "Labs.API._3___Models.Request.ProdutoRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Labs.API.Models.Produto",
+        "Type": "Labs.API._3___Models.Response.ProdutoResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -149,7 +149,7 @@
       },
       {
         "Name": "produto",
-        "Type": "Labs.API.Models.Produto",
+        "Type": "Labs.API._3___Models.Request.ProdutoRequest",
         "IsRequired": true
       }
     ],
