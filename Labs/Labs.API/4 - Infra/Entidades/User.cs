@@ -6,6 +6,7 @@ namespace Labs.API._4___Infra.Entidades
     {
         public virtual string nome { get; private set; }
         public virtual string email { get; private set; }
+        public virtual string token { get; private set; }
 
         public virtual void SetNome(string nome)
         {
@@ -15,6 +16,11 @@ namespace Labs.API._4___Infra.Entidades
         public virtual void SetEmail(string email)
         {
             this.email = email;
+        }
+
+        public virtual void setToken(string token)
+        {
+            this.token = token;
         }
     }
 }

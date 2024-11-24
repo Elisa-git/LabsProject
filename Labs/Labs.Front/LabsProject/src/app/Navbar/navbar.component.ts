@@ -19,6 +19,7 @@ export class NavbarComponent {
   public deslogar() {
     this.info = new UserResponse({});
     localStorage.removeItem('user');
+    localStorage.removeItem('token');
     this.route.navigate(['/entrar']);
   }
 

@@ -5,7 +5,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { BrowserModule } from "@angular/platform-browser";
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HttpClientModule } from "@angular/common/http";
+import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxSpinnerModule } from "ngx-spinner";
@@ -14,6 +14,7 @@ import { ToastNoAnimationModule } from "ngx-toastr";
 import { CadastrarProdutosComponent } from "./Produtos/componentes/cadastrar-produtos/cadastrar-produtos.component";
 import { NavbarComponent } from "./Navbar/navbar.component";
 import { ConfirmarEmailComponent } from "./Autenticacao/confirmar-email/confirmar-email.component";
+import { JwtInterceptor } from "./Interceptor/jwt.interceptor";
 
 @NgModule({
   declarations: [
@@ -38,7 +39,9 @@ import { ConfirmarEmailComponent } from "./Autenticacao/confirmar-email/confirma
   ],
   bootstrap: [ AppComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
-
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }
+  ]
 })
 
 export class AppModule { }

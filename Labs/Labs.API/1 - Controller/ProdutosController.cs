@@ -6,17 +6,18 @@ using Microsoft.AspNetCore.Authorization;
 using Labs.API._2___Application.Interfaces;
 using Labs.API._3___Models.Response;
 using Labs.API._3___Models.Request;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace Labs.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/produtos")]
     [ApiController]
-    [Authorize]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class ProdutosController : ControllerBase
     {
         private readonly LabsDBContext _context;
         private readonly IProdutoApplication produtoApplication;
-
+        
         public ProdutosController(LabsDBContext context, IProdutoApplication produtoApplication)
         {
             _context = context;
@@ -28,13 +29,12 @@ namespace Labs.API.Controllers
         public async Task<ActionResult<IEnumerable<ProdutoResponse>>> GetProdutos()
         {
             var result = await produtoApplication.GetProdutos();
-
             return Ok(result);
         }
 
         // GET: api/Produtos/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Produto>> GetProduto(int id)
+        public async Task<ActionResult<ProdutoResponse>> GetProduto(int id)
         {
             var produto = await produtoApplication.GetProduto(id);
 
@@ -69,7 +69,7 @@ namespace Labs.API.Controllers
         [HttpPost]
         public async Task<ActionResult<ProdutoResponse>> PostProduto(ProdutoRequest produto)
         {
-            var retorno = produtoApplication.PostProduto(produto);
+            var retorno = await produtoApplication.PostProduto(produto);
             return CreatedAtAction("GetProduto", new { id = retorno.Id }, retorno);
         }
 

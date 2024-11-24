@@ -98,6 +98,8 @@ export class CadastrarProdutosComponent implements OnInit {
       .subscribe(response => {
         this.toastr.success("O produto " + produto.nome + " foi cadastrado", "Sucesso!")
       }, erro => {
+        console.log("erro", erro);
+
         if (erro.status == 401) {
           this.toastr.warning('Você não possui permissão para adicionar um produto', 'Atenção!');
         } else {

@@ -252,7 +252,9 @@ C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Labs.API.deps.js
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Labs.API.runtimeconfig.json
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Labs.API.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Labs.API.pdb
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Humanizer.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -285,6 +287,12 @@ C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.Extens
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
@@ -308,6 +316,9 @@ C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\NuGet.ProjectMod
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\NuGet.Protocol.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\NuGet.Versioning.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\SendGrid.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\SendGrid.Extensions.DependencyInjection.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\StarkbankEcdsa.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -319,6 +330,7 @@ C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\System.Compositi
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\System.Composition.TypedParts.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\System.Security.Permissions.dll
@@ -491,7 +503,3 @@ C:\Users\lilis\Music\LabsProject\Labs\Labs.API\obj\Debug\net8.0\refint\Labs.API.
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\obj\Debug\net8.0\Labs.API.pdb
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\obj\Debug\net8.0\Labs.API.genruntimeconfig.cache
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\obj\Debug\net8.0\ref\Labs.API.dll
-C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\AutoMapper.dll
-C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\SendGrid.dll
-C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\StarkbankEcdsa.dll
-C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\SendGrid.Extensions.DependencyInjection.dll

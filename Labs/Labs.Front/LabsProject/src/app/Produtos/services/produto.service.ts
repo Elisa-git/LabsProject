@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 
 export class ProdutoService {
 
-  private readonly url = 'https://localhost:7042/api/Produtos/';
+  private readonly url = 'https://localhost:7042/api/produtos/';
 
   constructor(private readonly httpClient: HttpClient) { }
 

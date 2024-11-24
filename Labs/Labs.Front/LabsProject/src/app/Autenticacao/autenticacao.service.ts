@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { LoginRequest } from './entrar/models/login.request';
-import { Observable } from 'rxjs';
+import { Observable, tap } from 'rxjs';
 import { UserResponse } from './entrar/models/user.response';
 
 @Injectable({
@@ -16,7 +16,11 @@ export class AutenticacaoService {
   constructor(private readonly httpClient: HttpClient) { }
 
   public entrar(request: LoginRequest) : Observable<UserResponse> {
-    return this.httpClient.post<UserResponse>(this.apiAuthPersonalizada + "login", request)
+    return this.httpClient.post<UserResponse>(this.apiAuthPersonalizada + "login", request).pipe(
+      tap((response) => {
+        localStorage.setItem('token', response.token);
+      })
+    );
   }
 
   public cadastrarUsuario(request: LoginRequest) {

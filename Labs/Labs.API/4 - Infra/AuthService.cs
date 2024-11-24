@@ -1,10 +1,16 @@
-﻿using Labs.API._4___Infra.Entidades;
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Labs.API._4___Infra.Entidades;
 using Labs.API._4___Infra.Interfaces;
 using Labs.API.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Routing;
+using Microsoft.IdentityModel.Tokens;
+using NuGet.Protocol.Plugins;
 
 namespace Labs.API._4___Infra
 {
@@ -15,13 +21,16 @@ namespace Labs.API._4___Infra
         private readonly IUrlHelperFactory urlHelperFactory;
         private readonly IHttpContextAccessor httpContextAccessor;
         private readonly ILogger<AuthService> logger;
-        public AuthService(UserManager<PessoaComAcesso> userManager, IEmailSender emailSender, IUrlHelperFactory urlHelperFactory, IHttpContextAccessor httpContextAccessor, ILogger<AuthService> logger)
+        private readonly IConfiguration configuration;
+
+        public AuthService(UserManager<PessoaComAcesso> userManager, IEmailSender emailSender, IUrlHelperFactory urlHelperFactory, IHttpContextAccessor httpContextAccessor, ILogger<AuthService> logger, IConfiguration configuration)
         {
             this.userManager = userManager;
             this.emailSender = emailSender;
             this.urlHelperFactory = urlHelperFactory;
             this.httpContextAccessor = httpContextAccessor;
             this.logger = logger;
+            this.configuration = configuration;
         }
 
         public async Task<User> LogarUsuario(LoginUsuario login)
@@ -37,11 +46,46 @@ namespace Labs.API._4___Infra
             if (!user.EmailConfirmed)
                 throw new UnauthorizedAccessException("Você precisa confirmar sua conta antes e fazer login. Verifique seu email.");
 
+            var token = GeraToken(login);
+            
             var userLogado = new User();
             userLogado.SetEmail(login.Email);
             userLogado.SetNome(user.Nome);
+            userLogado.setToken(token.ValorToken);
 
             return userLogado;
+        }
+
+        private Token GeraToken(LoginUsuario login)
+        {
+            var claims = new[]
+            {
+                 new Claim(JwtRegisteredClaimNames.UniqueName, login.Email),
+                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            };
+
+            var key = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(configuration["Jwt:key"]));
+
+            var credenciais = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var expiracao = configuration["TokenConfiguration:ExpireHours"];
+            var expiration = DateTime.UtcNow.AddHours(double.Parse(expiracao));
+
+            JwtSecurityToken token = new JwtSecurityToken(
+              issuer: configuration["TokenConfiguration:Issuer"],
+              audience: configuration["TokenConfiguration:Audience"],
+              claims: claims,
+              expires: expiration,
+              signingCredentials: credenciais);
+
+            return new Token()
+            {
+                Authenticated = true,
+                ValorToken = new JwtSecurityTokenHandler().WriteToken(token),
+                Expiration = expiration,
+                Message = "Token JWT OK"
+            };
         }
 
         public async Task<IdentityResult> CadastrarUsuario(PessoaComAcesso user, string senha)
