@@ -4,11 +4,14 @@ using Labs.API.Config;
 using Labs.API.Models;
 using Microsoft.AspNetCore.Authorization;
 using Labs.API._2___Application.Interfaces;
+using Labs.API._3___Models.Response;
+using Labs.API._3___Models.Request;
 
 namespace Labs.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProdutosController : ControllerBase
     {
         private readonly LabsDBContext _context;
@@ -22,7 +25,7 @@ namespace Labs.API.Controllers
 
         // GET: api/Produtos
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Produto>>> GetProdutos()
+        public async Task<ActionResult<IEnumerable<ProdutoResponse>>> GetProdutos()
         {
             var result = await produtoApplication.GetProdutos();
 
@@ -33,78 +36,50 @@ namespace Labs.API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Produto>> GetProduto(int id)
         {
-            var produto = await _context.Produtos.FindAsync(id);
+            var produto = await produtoApplication.GetProduto(id);
 
             if (produto == null)
             {
                 return NotFound();
             }
 
-            return produto;
+            return Ok(produto);
         }
 
         // PUT: api/Produtos/5
         [HttpPut("{id}")]
-        [Authorize]
-        public async Task<IActionResult> PutProduto(int id, Produto produto)
+        public async Task<IActionResult> PutProduto(int id, ProdutoRequest produto)
         {
-            if (id != produto.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(produto).State = EntityState.Modified;
-
             try
             {
-                await _context.SaveChangesAsync();
+                await produtoApplication.PutProduto(id, produto);
+                return NoContent();
             }
-            catch (DbUpdateConcurrencyException)
+            catch (ArgumentException ex)
             {
-                if (!ProdutoExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return BadRequest(new { mensagem = ex.Message });
             }
-
-            return NoContent();
+            catch (KeyNotFoundException)
+            {
+                return NotFound();
+            }
         }
 
         // POST: api/Produtos
         [HttpPost]
-        [Authorize]
-        public async Task<ActionResult<Produto>> PostProduto(Produto produto)
+        public async Task<ActionResult<ProdutoResponse>> PostProduto(ProdutoRequest produto)
         {
-            _context.Produtos.Add(produto);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetProduto", new { id = produto.Id }, produto);
+            var retorno = produtoApplication.PostProduto(produto);
+            return CreatedAtAction("GetProduto", new { id = retorno.Id }, retorno);
         }
 
         // DELETE: api/Produtos/5
         [HttpDelete("{id}")]
-        [Authorize]
         public async Task<IActionResult> DeleteProduto(int id)
         {
-            var produto = await _context.Produtos.FindAsync(id);
-            if (produto == null)
-            {
-                return NotFound();
-            }
-
-            _context.Produtos.Remove(produto);
-            await _context.SaveChangesAsync();
-
+            await produtoApplication.DeleteProduto(id);
             return NoContent();
         }
 
-        private bool ProdutoExists(long id)
-        {
-            return _context.Produtos.Any(e => e.Id == id);
-        }
     }
 }
