@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { AutenticacaoService } from '../autenticacao.service';
 import { LoginRequest } from '../entrar/models/login.request';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-confirmar-email',
@@ -14,6 +15,7 @@ export class ConfirmarEmailComponent implements OnInit {
   public emailEnviado: boolean = false;
 
   constructor(
+    private readonly toastr: ToastrService,
     private readonly autenticacaoService: AutenticacaoService
   ) { }
 
@@ -37,6 +39,8 @@ export class ConfirmarEmailComponent implements OnInit {
         setTimeout(() => {
           this.emailEnviado = false;
         }, 15000)
+      }, erro => {
+        this.toastr.error(erro.error.message, 'Erro!');
       }
     );
   }

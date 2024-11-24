@@ -42,7 +42,11 @@ export class ListarProdutosComponent implements OnInit {
       .subscribe(response => {
         this.produtoResponse = response;
       }, erro => {
-        this.toastr.error('Erro!', 'Credenciais incorretas');
+        if (erro.status == 401) {
+          this.toastr.warning('Você não possui permissão para ver a lista de produtos', 'Atenção!');
+        } else {
+          this.toastr.error(erro.error.message, 'Erro!');
+        }
       }
     );
   }

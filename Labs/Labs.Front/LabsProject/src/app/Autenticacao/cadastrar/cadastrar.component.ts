@@ -69,7 +69,7 @@ export class CadastrarComponent implements OnInit {
       .subscribe(() => {
         this.route.navigate(['/confirmar-cadastro'], { state: { data: this.loginRequest }});
       }, erro => {
-        this.toastr.error('Erro!', erro.error.message);
+        this.toastr.error(erro.error.message, 'Erro!');
       }
     );
   }
