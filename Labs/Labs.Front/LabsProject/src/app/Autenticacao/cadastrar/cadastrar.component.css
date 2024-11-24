@@ -1,61 +1,14 @@
 .container {
-  margin-top: 10rem;
-  width: 80%;
-  height: 60%;
-  display: flex;
-  overflow: hidden;
-  max-width: 900px;
+  display: flex; /* Torna o contêiner um flexbox */
+  justify-content: space-between; /* Espaça igualmente entre os dois elementos */
+  align-items: flex-start; /* Alinha os itens ao topo */
 }
 
-.col-3 {
-  border-radius: 15px 0 0 15px;
-  background-color: rgba(219,151,181,1);
-  color: white;
-  padding: 40px 20px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+.form {
+  flex: 1; /* Faz o formulário ocupar a maior parte do espaço disponível */
+  margin-right: 20px; /* Espaço entre o formulário e a seção de senhas */
 }
 
-.col-3 h1 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.col-3 p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.text-small {
-  font-size: 0.85rem;
-  margin-top: 30px;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.col-9 {
-  flex: 2;
-  background-color: white;
-  padding: 40px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0 15px 15px 0;
-}
-
-.col-9 h1 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.col-9 p {
-  font-size: 1rem;
-  margin-bottom: 20px;
-  color: #888;
-}
 
 form div {
   margin-bottom: 15px;
@@ -88,4 +41,39 @@ button {
 button:hover {
   background-color: rgba(219,151,181,1);
   transition: 0.7s;
+}
+
+#btn-desabilitado {
+  background-color: gray;
+  cursor: default;
+}
+
+.alinha-meio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.senhas {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(110, 163, 223, 0.11);
+  border-radius: 8px;
+}
+
+.senhas h5 {
+  font-size: 1.1rem;
+}
+
+.senhas p {
+  margin: 5px 0;
+  font-size: 0.85rem;
+}
+
+.sucesso {
+  color: green;
+}
+
+.falha {
+  color: red;
 }

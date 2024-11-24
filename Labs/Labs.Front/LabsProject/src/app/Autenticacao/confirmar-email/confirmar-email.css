@@ -1,0 +1,31 @@
+.text-small {
+  font-size: 0.85rem;
+  margin-top: 30px;
+}
+
+.red-small {
+  font-size: 0.85rem;
+  margin-top: 30px;
+  color: rgba(219,151,181,1);
+}
+
+.alinha-meio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgba(110,162,223,1);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(219,151,181,1);
+  transition: 0.7s;
+}

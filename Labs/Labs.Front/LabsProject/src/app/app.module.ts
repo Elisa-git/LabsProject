@@ -13,6 +13,7 @@ import { EntrarComponent } from "./Autenticacao/entrar/entrar.component";
 import { ToastNoAnimationModule } from "ngx-toastr";
 import { CadastrarProdutosComponent } from "./Produtos/componentes/cadastrar-produtos/cadastrar-produtos.component";
 import { NavbarComponent } from "./Navbar/navbar.component";
+import { ConfirmarEmailComponent } from "./Autenticacao/confirmar-email/confirmar-email.component";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NavbarComponent } from "./Navbar/navbar.component";
     CadastrarComponent,
     ListarProdutosComponent,
     CadastrarProdutosComponent,
-    NavbarComponent
+    NavbarComponent,
+    ConfirmarEmailComponent
   ],
   imports: [
     BrowserModule,

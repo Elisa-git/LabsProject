@@ -2,5 +2,16 @@
   <app-navbar [info]="navbarInfo"></app-navbar>
 </header>
 <main>
-  <router-outlet (activate)="onRouterOutletActivate($event)"></router-outlet>
+
+  <div class="container">
+
+    <div class="left" id="content">
+    </div>
+
+    <div class="right">
+      <router-outlet (activate)="onRouterOutletActivate($event)"></router-outlet>
+    </div>
+
+  </div>
+
 </main>

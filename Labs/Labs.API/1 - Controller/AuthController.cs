@@ -1,10 +1,12 @@
 ﻿using Labs.API._2___Application.Interfaces;
+using Labs.API._4___Infra.Entidades;
 using Labs.API.Models;
 using Labs.API.Models.Request;
 using Labs.API.Models.Response;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
+using NuGet.Common;
 
 namespace Labs.API.Controllers
 {
@@ -67,7 +69,6 @@ namespace Labs.API.Controllers
 
             return Ok("E-mail confirmado com sucesso!");
         }
-
 
     }
 }

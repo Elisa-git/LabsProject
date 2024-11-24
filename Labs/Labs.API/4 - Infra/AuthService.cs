@@ -69,7 +69,7 @@ namespace Labs.API._4___Infra
 
             var confirmationLink = urlHelper.Action(
                 "ConfirmarEmail",
-                "auth", // Nome do controlador
+                "auth", 
                 new { userId = user.Id, token },
                 httpContext.Request.Scheme);
 
@@ -99,5 +99,7 @@ namespace Labs.API._4___Infra
 
             return retorno;
         }
+
+
     }
 }

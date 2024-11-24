@@ -1,37 +1,36 @@
-<ngx-spinner
-  id="spinner-cadastro" bdColor="rgba(0, 0, 0, 0.8)" size="medium"
-  color="#ffffff" type="ball-8bits" [fullScreen]="false"
->
-</ngx-spinner>
+<h1>Crie sua conta</h1>
+<p>Preencha seus dados</p>
 
 <div class="container">
 
-  <div class="col-3">
-    <h1>Seja Bem-vindo ao Labs!</h1>
-    <p>Crie sua conta agora mesmo.</p>
-    <!-- <p class="text-small">Esqueci minha senha</p> -->
+  <form [formGroup]="usuarioForm" class="form">
+    <div>
+      <label for="nome-input">Nome</label>
+      <input type="nome" formControlName="nome" class="form-control" id="nome-input" placeholder="Digite seu nome" required>
+    </div>
+    <div>
+      <label for="email-input">Email</label>
+      <input type="email" formControlName="email" class="form-control" id="email-input" placeholder="Digite seu email" required>
+    </div>
+    <div>
+      <label for="senha-input">Senha</label>
+      <input type="password" formControlName="senha" class="form-control" id="senha-input" placeholder="Digite sua senha" required>
+    </div>
+  </form>
+
+  <div class="senhas">
+    <h5 class="mb-4 fw-bold">Regras da senha</h5>
+    <p id="tamanho" class="senha">Deve ter no mínimo 6 caracteres</p>
+    <p id="especial" class="senha">Deve ter no mínimo um caractere especial</p>
+    <p id="numero" class="senha">Deve ter no mínimo um número ('0'-'9')</p>
+    <p id="maiusculo" class="senha">Deve ter no mínimo um caractere maiúsculo ('A'-'Z')</p>
+    <p id="minusculo" class="senha">Deve ter no mínimo um caractere minúsculo ('a'-'z')</p>
   </div>
 
-  <div class="col-9">
-    <h1>Crie sua conta</h1>
-    <p>Preencha seus dados</p>
+</div>
 
-    <form [formGroup]="usuarioForm">
-      <div>
-        <label for="nome-input">Nome</label>
-        <input type="nome" formControlName="nome" class="form-control" id="nome-input" placeholder="Digite seu nome" required>
-      </div>
-      <div>
-        <label for="email-input">Email</label>
-        <input type="email" formControlName="email" class="form-control" id="email-input" placeholder="Digite seu email" required>
-      </div>
-      <div>
-        <label for="senha-input">Senha</label>
-        <input type="password" formControlName="senha" class="form-control" id="senha-input" placeholder="Digite sua senha" required>
-      </div>
-    </form>
-
-    <button id="cadastrar-btn" (click)="cadastrarUsuario()">Cadastrar</button>
-  </div>
-
+<div class="alinha-meio">
+  <button id="btn-desabilitado" *ngIf="usuarioForm.invalid">Cadastrar</button>
+  <button id="cadastrar-btn" *ngIf="!usuarioForm.invalid && nivelSenha > 4" (click)="cadastrarUsuario()">Cadastrar</button>
+  <!-- TRABALHAR NESSA LOGICA -->
 </div>

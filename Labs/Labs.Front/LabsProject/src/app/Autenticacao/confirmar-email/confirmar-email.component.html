@@ -1,0 +1,10 @@
+<h1>Parabéns, {{ login.nome }}.</h1>
+<h4>Sua conta foi criada com sucesso!</h4>
+<p class="mt-4">Lembrando que você só consegue acessar a conta após a confirmação do Email.<br> Então acesse seu Email e clique no link de confirmação.</p>
+<p class="text-small mt-5">Não recebeu o Email? Clique no botão abaixo para recebê-lo.</p>
+
+<div class="alinha-meio mt-5 mb-4">
+  <button type="button" (click)="reenviarEmail()">Reenviar Email</button>
+</div>
+
+<p *ngIf="emailEnviado" class="red-small alinha-meio">Email enviado! Aguarde alguns segundos.</p>

@@ -12,7 +12,6 @@ export class AppComponent implements OnInit {
   public navbarInfo = new UserResponse({});
 
   ngOnInit() {
-
     const storedInfo = localStorage.getItem('user');
     if (storedInfo) {
       this.navbarInfo = JSON.parse(storedInfo);

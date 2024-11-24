@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { LoginRequest } from './models/login.request';
 import { AutenticacaoService } from '../autenticacao.service';
@@ -14,7 +14,7 @@ import { UserResponse } from './models/user.response';
   styleUrl: './entrar.component.css'
 })
 
-export class EntrarComponent {
+export class EntrarComponent implements OnInit {
 
   @Output() infoForNavbar = new EventEmitter<UserResponse>();
   public loginForm: FormGroup;
@@ -35,6 +35,15 @@ export class EntrarComponent {
     });
   }
 
+  ngOnInit(): void {
+    this.AdicionarContent();
+  }
+
+  private AdicionarContent() {
+    const content = '<h1>Bem-vindo de volta!</h1> <p>Acesse sua conta agora mesmo.</p>';
+    document.getElementById("content")!.innerHTML = content;
+  }
+
   public entrar() {
     this.spinner.show();
     this.loginRequest = new LoginRequest({
@@ -50,8 +59,6 @@ export class EntrarComponent {
         this.toastr.success('Sucesso!', 'Você logou!!');
         this.route.navigate(['/listar-produtos']);
       }, erro => {
-        console.log(erro);
-
         this.toastr.error(erro.error.message, 'Erro!');
       }
     );

@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AutenticacaoService } from '../autenticacao.service';
 import { ToastrService } from 'ngx-toastr';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { LoginRequest } from '../entrar/models/login.request';
 import { finalize } from 'rxjs';
+import { UserResponse } from '../entrar/models/user.response';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastrar',
@@ -12,16 +14,21 @@ import { finalize } from 'rxjs';
   styleUrl: './cadastrar.component.css'
 })
 
-export class CadastrarComponent {
+export class CadastrarComponent implements OnInit {
+
+  @Output() infoForNavbar = new EventEmitter<UserResponse>();
 
   public usuarioForm: FormGroup;
   public loginRequest = new LoginRequest({});
+
+  public nivelSenha = 0;
 
   constructor(
     private readonly formBuilder: FormBuilder,
     private readonly autenticacaoService: AutenticacaoService,
     private readonly toastr: ToastrService,
-    private readonly spinner: NgxSpinnerService
+    private readonly spinner: NgxSpinnerService,
+    private readonly route: Router
   )
   {
     this.usuarioForm = this.formBuilder.group({
@@ -29,6 +36,23 @@ export class CadastrarComponent {
       email: [ '', Validators.required ],
       senha: [ '', Validators.required ]
     });
+
+    this.usuarioForm.get('senha')?.valueChanges.subscribe(value => {
+      this.nivelSenha = this.avaliarForcaSenha(value);
+    });
+  }
+
+  ngOnInit(): void {
+    this.AdicionarContent();
+  }
+
+  private avaliarForcaSenha(senha: string) : number {
+    return this.autenticacaoService.validarScoreSenha(senha);
+  }
+
+  private AdicionarContent() {
+    const content = '<h1>Seja bem-vindo <br> ao Labs!</h1> <p>Crie sua conta agora mesmo.</p>';
+    document.getElementById("content")!.innerHTML = content;
   }
 
   public cadastrarUsuario() {
@@ -43,9 +67,9 @@ export class CadastrarComponent {
       .cadastrarUsuario(this.loginRequest)
       .pipe(finalize(() => { this.spinner.hide(); }))
       .subscribe(() => {
-        this.toastr.success('Sucesso!', 'Usuário criado!!');
+        this.route.navigate(['/confirmar-cadastro'], { state: { data: this.loginRequest }});
       }, erro => {
-        this.toastr.error('Erro!', 'Um problema aconteceu');
+        this.toastr.error('Erro!', erro.error.message);
       }
     );
   }

@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { ListarProdutosComponent } from './Produtos/componentes/listar-produtos/listar-produtos.component';
 import { EntrarComponent } from './Autenticacao/entrar/entrar.component';
 import { CadastrarProdutosComponent } from './Produtos/componentes/cadastrar-produtos/cadastrar-produtos.component';
+import { ConfirmarEmailComponent } from './Autenticacao/confirmar-email/confirmar-email.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'cadastrar-produtos',
     component: CadastrarProdutosComponent
+  },
+  {
+    path: 'confirmar-cadastro',
+    component: ConfirmarEmailComponent
   }
 ];
 
