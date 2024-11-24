@@ -13,6 +13,6 @@
 </form>
 
 <div class="alinha-meio">
-  <button id="cadastrar-btn" (click)="entrar()">Entrar</button>
-  <!-- DesabilitarBotao -->
+  <button id="cadastrar-btn" *ngIf="!loginForm.invalid" (click)="entrar()">Entrar</button>
+  <button id="btn-desabilitado" *ngIf="loginForm.invalid">Entrar</button>
 </div>

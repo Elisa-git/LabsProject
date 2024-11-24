@@ -30,7 +30,6 @@
 </div>
 
 <div class="alinha-meio">
-  <button id="btn-desabilitado" *ngIf="usuarioForm.invalid">Cadastrar</button>
+  <button id="btn-desabilitado" *ngIf="usuarioForm.invalid || nivelSenha < 5">Cadastrar</button>
   <button id="cadastrar-btn" *ngIf="!usuarioForm.invalid && nivelSenha > 4" (click)="cadastrarUsuario()">Cadastrar</button>
-  <!-- TRABALHAR NESSA LOGICA -->
 </div>

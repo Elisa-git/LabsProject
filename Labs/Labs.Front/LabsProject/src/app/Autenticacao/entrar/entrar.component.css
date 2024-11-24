@@ -36,3 +36,8 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+
+#btn-desabilitado {
+  background-color: gray;
+  cursor: default;
+}
