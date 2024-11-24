@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Labs.API.Config;
 using Labs.API.Models;
 using Microsoft.AspNetCore.Authorization;
+using Labs.API._2___Application.Interfaces;
 
 namespace Labs.API.Controllers
 {
@@ -11,17 +12,21 @@ namespace Labs.API.Controllers
     public class ProdutosController : ControllerBase
     {
         private readonly LabsDBContext _context;
+        private readonly IProdutoApplication produtoApplication;
 
-        public ProdutosController(LabsDBContext context)
+        public ProdutosController(LabsDBContext context, IProdutoApplication produtoApplication)
         {
             _context = context;
+            this.produtoApplication = produtoApplication;
         }
 
         // GET: api/Produtos
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Produto>>> GetProdutos()
         {
-            return await _context.Produtos.ToListAsync();
+            var result = await produtoApplication.GetProdutos();
+
+            return Ok(result);
         }
 
         // GET: api/Produtos/5
