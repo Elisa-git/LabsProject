@@ -1,10 +1,7 @@
-﻿using Labs.API._3___Models.Request;
-using Labs.API._3___Models.Response;
-using Labs.API._4___Infra.Interfaces;
+﻿using Labs.API._4___Infra.Interfaces;
 using Labs.API.Config;
 using Labs.API.Models;
 using Microsoft.EntityFrameworkCore;
-using SendGrid.Helpers.Mail;
 
 namespace Labs.API._4___Infra
 {

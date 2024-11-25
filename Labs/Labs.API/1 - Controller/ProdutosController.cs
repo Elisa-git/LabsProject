@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Labs.API.Config;
-using Labs.API.Models;
 using Microsoft.AspNetCore.Authorization;
 using Labs.API._2___Application.Interfaces;
 using Labs.API._3___Models.Response;
@@ -15,12 +13,10 @@ namespace Labs.API.Controllers
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class ProdutosController : ControllerBase
     {
-        private readonly LabsDBContext _context;
         private readonly IProdutoApplication produtoApplication;
         
-        public ProdutosController(LabsDBContext context, IProdutoApplication produtoApplication)
+        public ProdutosController(IProdutoApplication produtoApplication)
         {
-            _context = context;
             this.produtoApplication = produtoApplication;
         }
 

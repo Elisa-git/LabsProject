@@ -51,7 +51,7 @@ namespace Labs.API._4___Infra
             var userLogado = new User();
             userLogado.SetEmail(login.Email);
             userLogado.SetNome(user.Nome);
-            userLogado.setToken(token.ValorToken);
+            userLogado.SetToken(token.ValorToken);
 
             return userLogado;
         }

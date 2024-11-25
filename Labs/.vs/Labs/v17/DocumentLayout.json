@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\4 - infra\\interfaces\\iprodutoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\4 - infra\\interfaces\\iprodutoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\1 - controller\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\1 - controller\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\labs.api\\3 - models\\response\\produtoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F51B4A1D-B54B-4048-8C05-AF24E789F99E}|Labs.API\\Labs.API.csproj|solutionrelative:labs.api\\3 - models\\response\\produtoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C610CB1B-F995-47A1-A487-E5FF7D3D5BA1}|Testes\\Testes.csproj|c:\\users\\lilis\\music\\labsproject\\labs\\testes\\service\\produtosservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C610CB1B-F995-47A1-A487-E5FF7D3D5BA1}|Testes\\Testes.csproj|solutionrelative:testes\\service\\produtosservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,39 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IProdutoService.cs",
-              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\4 - Infra\\Interfaces\\IProdutoService.cs",
-              "RelativeDocumentMoniker": "Labs.API\\4 - Infra\\Interfaces\\IProdutoService.cs",
-              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\4 - Infra\\Interfaces\\IProdutoService.cs",
-              "RelativeToolTip": "Labs.API\\4 - Infra\\Interfaces\\IProdutoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Title": "ProdutosServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Testes\\Service\\ProdutosServiceTest.cs",
+              "RelativeDocumentMoniker": "Testes\\Service\\ProdutosServiceTest.cs",
+              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Testes\\Service\\ProdutosServiceTest.cs",
+              "RelativeToolTip": "Testes\\Service\\ProdutosServiceTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T20:35:37.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProdutoResponse.cs",
-              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\3 - Models\\Response\\ProdutoResponse.cs",
-              "RelativeDocumentMoniker": "Labs.API\\3 - Models\\Response\\ProdutoResponse.cs",
-              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\3 - Models\\Response\\ProdutoResponse.cs",
-              "RelativeToolTip": "Labs.API\\3 - Models\\Response\\ProdutoResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T03:49:43.987Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProdutosController.cs",
-              "DocumentMoniker": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\1 - Controller\\ProdutosController.cs",
-              "RelativeDocumentMoniker": "Labs.API\\1 - Controller\\ProdutosController.cs",
-              "ToolTip": "C:\\Users\\lilis\\Music\\LabsProject\\Labs\\Labs.API\\1 - Controller\\ProdutosController.cs",
-              "RelativeToolTip": "Labs.API\\1 - Controller\\ProdutosController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T02:51:28.531Z",
+              "WhenOpened": "2024-11-24T23:21:18.929Z",
               "EditorCaption": ""
             }
           ]

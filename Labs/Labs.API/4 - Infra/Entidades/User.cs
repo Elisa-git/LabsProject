@@ -18,7 +18,7 @@ namespace Labs.API._4___Infra.Entidades
             this.email = email;
         }
 
-        public virtual void setToken(string token)
+        public virtual void SetToken(string token)
         {
             this.token = token;
         }
