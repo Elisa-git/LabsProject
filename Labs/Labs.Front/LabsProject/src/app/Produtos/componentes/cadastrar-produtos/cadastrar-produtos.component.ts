@@ -2,7 +2,6 @@ import { ProdutoService } from './../../services/produto.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { NgxSpinnerService } from 'ngx-spinner';
 import { ToastrService } from 'ngx-toastr';
 import { ProdutoRequest } from '../../models/produtos.request';
 import { finalize } from 'rxjs';
@@ -21,7 +20,6 @@ export class CadastrarProdutosComponent implements OnInit {
   constructor(
     private readonly formBuilder: FormBuilder,
     private readonly toastr: ToastrService,
-    private readonly spinner: NgxSpinnerService,
     private readonly route: Router,
     private readonly produtoService: ProdutoService
   )
@@ -53,8 +51,6 @@ export class CadastrarProdutosComponent implements OnInit {
   }
 
   public salvar() {
-    this.spinner.show();
-
     var request = new ProdutoRequest({
       nome: this.produtoForm.get("nome")?.value,
       marca: this.produtoForm.get("marca")?.value,
@@ -73,7 +69,6 @@ export class CadastrarProdutosComponent implements OnInit {
     this.produtoService
       .editar(produto)
       .pipe(finalize(() => {
-        this.spinner.hide();
         this.route.navigate(['/listar-produtos']);
       }))
       .subscribe(response => {
@@ -92,14 +87,11 @@ export class CadastrarProdutosComponent implements OnInit {
     this.produtoService
       .inserir(produto)
       .pipe(finalize(() => {
-        this.spinner.hide();
         this.route.navigate(['/listar-produtos']);
       }))
       .subscribe(response => {
         this.toastr.success("O produto " + produto.nome + " foi cadastrado", "Sucesso!")
       }, erro => {
-        console.log("erro", erro);
-
         if (erro.status == 401) {
           this.toastr.warning('Você não possui permissão para adicionar um produto', 'Atenção!');
         } else {
