@@ -2,7 +2,6 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AutenticacaoService } from '../autenticacao.service';
 import { ToastrService } from 'ngx-toastr';
-import { NgxSpinnerService } from 'ngx-spinner';
 import { LoginRequest } from '../entrar/models/login.request';
 import { finalize } from 'rxjs';
 import { UserResponse } from '../entrar/models/user.response';
