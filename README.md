@@ -46,7 +46,7 @@ Senha: (sem senha)
 Para configurar a chave do **SendGrid**, execute o seguinte comando:
 
 ```bash
-dotnet user-secrets set "SendGridKey" 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
+dotnet user-secrets set "SendGridKey" "apiKey"
 ```
 
 ## Execução do Projeto
@@ -71,7 +71,7 @@ dotnet user-secrets set "SendGridKey" SG.A7bmh3Q6SQmb-jR4FxiWCQ.7tM-mQCAdj0mUq4f
 ## ⚠️ Observações Importantes
 
 - A **confirmação de e-mail** deve ser feita **em máquina local**.
-
+- Passarei a apiKey por email
 - Durante os meus testes:
   - O **Outlook** não respondeu muito bem e o e-mail de confirmação se perdia, mesmo com a API e o **SendGrid** afirmando o contrário.
   - Em contrapartida, o **Gmail** funcionou corretamente em todas as vezes.
