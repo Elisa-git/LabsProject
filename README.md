@@ -29,7 +29,7 @@ Senha: (sem senha)
 
 - Abra o **XAMPP** e inicie o **MySQL**.
 
-#### 2. Configuração do Banco de Dados no Visual Studio
+#### 2. Configuração do Banco de Dados no Visual Studio ou Visual Studio Code
 
 - Vá até **Ferramentas** > **Gerenciador de Pacotes NuGet** > **Console do Gerenciador de Pacotes**.
 - Com o **projeto API** como o projeto padrão, execute os seguintes comandos no console:
@@ -38,3 +38,41 @@ Senha: (sem senha)
    add-migration migTeste
    update-database
    ```
+
+## Instruções para Configuração da chave secreta do servidor de Email
+
+### 🔑 Configuração da Chave Secret
+
+Para configurar a chave do **SendGrid**, execute o seguinte comando:
+
+```bash
+dotnet user-secrets set "SendGridKey" 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
+```
+
+## Execução do Projeto
+
+### 🚀 Rodando o Projeto .NET
+
+1. Abra o projeto no **Visual Studio**.
+2. Execute o projeto normalmente.
+
+## 🚀 Rodando o Projeto Angular
+
+1. Antes de iniciar, certifique-se de que os pacotes estão instalados. Para isso, execute o seguinte comando:
+
+   ```bash
+   npm install
+   ```
+2. Inicie o servidor Angular com o comando:
+
+   ```bash
+   ng serve -o
+   ```
+## ⚠️ Observações Importantes
+
+- A **confirmação de e-mail** deve ser feita **em máquina local**.
+
+- Durante os meus testes:
+  - O **Outlook** não respondeu muito bem e o e-mail de confirmação se perdia, mesmo com a API e o **SendGrid** afirmando o contrário.
+  - Em contrapartida, o **Gmail** funcionou corretamente em todas as vezes.
+
