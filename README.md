@@ -75,4 +75,5 @@ dotnet user-secrets set "SendGridKey" "apiKey"
 - Durante os meus testes:
   - O **Outlook** não respondeu muito bem e o e-mail de confirmação se perdia, mesmo com a API e o **SendGrid** afirmando o contrário.
   - Em contrapartida, o **Gmail** funcionou corretamente em todas as vezes.
-
+- O cors está configurado para permitir somente http://localhost:4200. Caso rode o front-end em outra porta, altere a origem permitida no arquivo program.cs
+- Os endpoint do back-end estão setados para a porta 7042
