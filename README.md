@@ -93,3 +93,10 @@ Foi adotada uma arquitetura em camadas. Considerou-se desnecessário implementar
 
 Em relação ao **Domain-Driven Design (DDD)**, a estrutura foi simplificada, unificando as camadas de infraestrutura e serviço para atender às necessidades do projeto de forma eficiente.
 
+## Tecnologias utilizadas
+
+1. **Microsoft.Extensions.Logging**: Foi escolhido pela facilidade de uso e pela integração direta com o .NET, permitindo adicionar logs estruturados de forma prática e eficiente.
+2. **Entity Framework Core**: Selecionado devido à sua simplicidade no acesso e manipulação de dados, atendendo bem às necessidades do projeto com recursos como LINQ e mapeamento de entidades.
+3. **IdentityModel**: Foi escolhido por se adequar muito bem aos requisitos da página de login. Ele oferece criptografia automática de senhas e métodos prontos para login, registro, entre outros. Com isso, foi possível utilizar os recursos existentes e realizar apenas alguns ajustes para alinhá-los às regras especificadas no documento de requisitos.
+4. **SendGrid**: Escolhido por ser uma das ferramentas de envio de e-mails mais utilizadas no mercado, com documentação clara e integração simples, facilitando o envio de e-mails transacionais.
+5. **Bootstrap**: Utilizado em algumas partes para proporcionar maior agilidade na construção do layout.
