@@ -27,7 +27,6 @@ export class CadastrarComponent implements OnInit {
     private readonly formBuilder: FormBuilder,
     private readonly autenticacaoService: AutenticacaoService,
     private readonly toastr: ToastrService,
-    private readonly spinner: NgxSpinnerService,
     private readonly route: Router
   )
   {
@@ -56,7 +55,6 @@ export class CadastrarComponent implements OnInit {
   }
 
   public cadastrarUsuario() {
-    this.spinner.show();
     this.loginRequest = new LoginRequest({
       nome: this.usuarioForm.get("nome")?.value,
       email: this.usuarioForm.get("email")?.value,
@@ -65,7 +63,6 @@ export class CadastrarComponent implements OnInit {
 
     this.autenticacaoService
       .cadastrarUsuario(this.loginRequest)
-      .pipe(finalize(() => { this.spinner.hide(); }))
       .subscribe(() => {
         this.route.navigate(['/confirmar-cadastro'], { state: { data: this.loginRequest }});
       }, erro => {
