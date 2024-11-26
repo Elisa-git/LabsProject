@@ -21,12 +21,12 @@ namespace Labs.API.Config
         {
             builder.Entity<Produto>().HasData
             (
-                //new Produto { Id = 1, Nome = "Roda de Carro", Marca = "CAT", Quantidade = 15 },
-                //new Produto { Id = 2, Nome = "Roda de Moto", Marca = "CAT", Quantidade = 190 },
-                //new Produto { Id = 3, Nome = "Roda de Bicicleta", Marca = "CAT", Quantidade = 130 },
-                //new Produto { Id = 4, Nome = "Carro de controle remoto", Marca = "Mattel", Quantidade = 9 },
-                //new Produto { Id = 5, Nome = "Boneca Barbie", Marca = "Mattel", Quantidade = 15 },
-                //new Produto { Id = 6, Nome = "Pen Drive", Marca = "SanDisk", Quantidade = 1 }
+                new Produto(1, "Roda de Carro", "CAT", 45),
+                new Produto(2, "Roda de Moto", "CAT", 515),
+                new Produto(3, "Roda de Bicicleta", "CAT", 1345),
+                new Produto(4, "Carro de controle remoto", "Mattel", 15),
+                new Produto(5, "Boneca Barbie", "Mattel", 215),
+                new Produto(6, "Pen Drive", "SanDisk", 1545)
 
             );
         }
