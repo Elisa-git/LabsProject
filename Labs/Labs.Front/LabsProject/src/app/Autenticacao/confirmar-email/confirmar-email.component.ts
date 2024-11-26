@@ -30,8 +30,6 @@ export class ConfirmarEmailComponent implements OnInit {
   }
 
   public reenviarEmail() {
-    console.log('aa');
-
     this.autenticacaoService
       .reenviarEmail(this.login.email)
       .subscribe(response => {
