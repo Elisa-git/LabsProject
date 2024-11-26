@@ -4,7 +4,13 @@
     {
         public Produto() { }
 
-        public Produto(int id, string nome, string marca, int quantidade) { }
+        public Produto(int id, string nome, string marca, int quantidade) 
+        {
+            this.Id = id;
+            this.Nome = nome;
+            this.Marca = marca;
+            this.Quantidade = quantidade;
+        }
 
         public virtual int Id { get; private set; }
         public virtual string Nome { get; private set; }

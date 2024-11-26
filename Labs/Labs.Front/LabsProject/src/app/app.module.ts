@@ -29,7 +29,7 @@ import { JwtInterceptor } from "./Interceptor/jwt.interceptor";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
+    // NgbModule,
     HttpClientModule,
     NgxSpinnerModule.forRoot({ type: 'ball-8bits' }),
     FormsModule,
