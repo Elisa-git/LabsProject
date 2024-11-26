@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NgxSpinnerService } from 'ngx-spinner';
 import { ToastrService } from 'ngx-toastr';
 import { ProdutoService } from '../../services/produto.service';
 import { finalize } from 'rxjs';
@@ -19,7 +18,6 @@ export class ListarProdutosComponent implements OnInit {
   constructor(
     private readonly route: Router,
     private readonly toastr: ToastrService,
-    private readonly spinner: NgxSpinnerService,
     private readonly produtoService: ProdutoService
   ) { }
 
@@ -34,11 +32,8 @@ export class ListarProdutosComponent implements OnInit {
   }
 
   private listar() {
-    this.spinner.show();
-
     this.produtoService
       .listar()
-      .pipe(finalize(() => { this.spinner.hide(); }))
       .subscribe(response => {
         this.produtoResponse = response;
       }, erro => {
