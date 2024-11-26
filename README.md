@@ -77,3 +77,19 @@ dotnet user-secrets set "SendGridKey" "apiKey"
   - Em contrapartida, o **Gmail** funcionou corretamente em todas as vezes.
 - O cors está configurado para permitir somente http://localhost:4200. Caso rode o front-end em outra porta, altere a origem permitida no arquivo program.cs
 - Os endpoint do back-end estão setados para a porta 7042
+
+# 📖 Escolhas de desenvolvimento
+
+## Teste Unitário  
+Optou-se por utilizar **testes unitários** devido à sua capacidade de validar a menor granularidade do sistema, garantindo o funcionamento correto de cada componente isoladamente.  
+
+## Arquitetura/Design  
+Foi adotada uma arquitetura em camadas. Considerou-se desnecessário implementar o **DDD** (com 5 camadas), já que o projeto não apresentava alta complexidade ou robustez. Isso tornaria algumas camadas redundantes, servindo apenas como intermediárias. Assim, foram definidas as seguintes camadas:
+
+- **Controller**: Responsável por receber os dados.  
+- **Application**: Realiza o mapeamento entre as entidades e os modelos de request/response.  
+- **Models**: Contém os modelos de request e response.  
+- **Infra**: Agrega as regras de negócio, a conexão com o banco de dados e também a entidade.
+
+Em relação ao **Domain-Driven Design (DDD)**, a estrutura foi simplificada, unificando as camadas de infraestrutura e serviço para atender às necessidades do projeto de forma eficiente.
+
