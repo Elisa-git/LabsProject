@@ -54,7 +54,7 @@ namespace Labs.API._4___Infra
             }
         }
 
-        private bool ProdutoExists(long id)
+        private bool ProdutoExists(int id)
         {
             return context.Produtos.Any(e => e.Id == id);
         }

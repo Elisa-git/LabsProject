@@ -253,6 +253,7 @@ C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Labs.API.runtime
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Labs.API.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Labs.API.pdb
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Humanizer.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -277,6 +278,7 @@ C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.DotNet
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
@@ -304,6 +306,7 @@ C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.Visual
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Moq.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\MySqlConnector.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\lilis\Music\LabsProject\Labs\Labs.API\bin\Debug\net8.0\NuGet.Common.dll

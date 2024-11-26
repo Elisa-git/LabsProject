@@ -4,6 +4,8 @@
     {
         public Produto() { }
 
+        public Produto(int id, string nome, string marca, int quantidade) { }
+
         public virtual int Id { get; private set; }
         public virtual string Nome { get; private set; }
         public virtual string Marca { get; private set; }

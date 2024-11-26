@@ -6,6 +6,7 @@ namespace Labs.API.Config
 {
     public class LabsDBContext : IdentityDbContext<PessoaComAcesso, PerfilDeAcesso, int>
     {
+        public LabsDBContext() { }
         public LabsDBContext(DbContextOptions<LabsDBContext> opt) : base(opt) { }
 
         public DbSet<Produto> Produtos { get; set; }

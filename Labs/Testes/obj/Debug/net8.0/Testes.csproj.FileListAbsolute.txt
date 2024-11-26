@@ -41,6 +41,7 @@ C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\Microsoft.DiaSymRe
 C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
 C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
@@ -75,6 +76,7 @@ C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\Microsoft.VisualSt
 C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\Moq.dll
 C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\MySqlConnector.dll
 C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\FizzWare.NBuilder.dll
 C:\Users\lilis\Music\LabsProject\Labs\Testes\bin\Debug\net8.0\Newtonsoft.Json.dll
